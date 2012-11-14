@@ -9,7 +9,7 @@ endif
 MANAGERS_SOURCES_PATH = ../src/managers
 MANAGERS_INCLUDE_PATH = ../include
 DARWIN_FRAMEWORK_PATH = ../darwin/Framework
-WEBOTS_INCLUDE_PATH = $(WEBOTS_HOME)/include/controller/cpp
+WEBOTS_INCLUDE_PATH = /usr/local/webots/include/controller/cpp
 TARGET = managers.a
 
 CXX_SOURCES = \
