@@ -92,6 +92,7 @@ void DARwInOPGaitManager::step(int step) {
     printf("%lf\t%lf\t%lf\t", (gyro[0]-512), (gyro[1]-512), (gyro[2]-512));
     const double *acc = mRobot->getAccelerometer("Accelerometer")->getValues();
     printf("%lf\t%lf\t%lf\t", (acc[0]-512), (acc[1]-512), (acc[2]-512));
+    printf("%lf\t%lf\t%lf\t%lf\t%lf\t", mServos[8]->getPosition(),mServos[10]->getPosition(),mServos[12]->getPosition(),mServos[14]->getPosition(),mServos[16]->getPosition());
     
     MotionStatus::RL_GYRO = gyro[0] - 512;  // 512 = central value, skip calibration step of the MotionManager,
     MotionStatus::FB_GYRO = gyro[1] - 512;  // because the influence of the calibration is imperceptible.
